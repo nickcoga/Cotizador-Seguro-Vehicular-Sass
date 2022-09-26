@@ -1,0 +1,128 @@
+@import "../../../scss/abstracts/variables.scss";
+
+.banner {
+    background-color: $LightPurple;
+    padding-top: 50px;
+    @media only screen  and (min-width: 768px) {
+        width: 39vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    &__contentText {
+        position: absolute;
+        top: 16vh;
+        left: 8vw;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        @media only screen  and (min-width: 768px) {
+            position: absolute;
+            top: 46vh;
+            left: 15vw;
+        }
+    }
+    &__text {
+        width: 46px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 16px;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+        color: $DarkPurple;
+        @media only screen  and (min-width: 768px) {
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+    &__title {
+        width: 65vw;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 36px;
+        letter-spacing: -0.6px;
+        color: $DarkPurple;
+        @media only screen  and (min-width: 768px) {
+            font-size: 36px;
+            line-height: 48px;
+            width: initial;
+        }
+    }
+    &__subtitle1 {
+        @media only screen  and (min-width: 768px) {
+            color: $Red;
+        }
+    }
+    &__subtitle2 {
+        color: $Red;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 36px;
+        letter-spacing: -0.6px;
+        @media only screen  and (min-width: 768px) {
+            font-size: 36px;
+            line-height: 48px;
+        }
+    }
+    &__paragraph {
+        width: 60vw;
+        color: $DarkPurple;
+        font-family: $roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        @media only screen  and (min-width: 768px) {
+            width: 90%;
+        }
+    }
+    &__contentImage {
+
+        &__lady_car_mobile {
+            position: relative;
+            left: 69vw;
+            top: 7vh;
+            @media only screen  and (min-width: 768px) {
+                display: none;
+            }
+        }
+        
+        &__home_background {
+            display: initial;
+            width: 100%;
+            @media only screen  and (max-width: 768px) {
+                display: none;
+            }
+        }
+
+        &__lady_car_desktop {
+            display: none;
+            @media only screen  and (min-width: 768px) {
+                position: absolute;
+                left: 15vw;
+                top: 12vh;
+                width: 13vw;
+                display: initial;
+            }
+        }
+    }
+    &__copyright {
+        display: none;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        @media only screen  and (min-width: 768px) {
+            position: absolute;
+            top: 92vh;
+            left: 12vw;
+            display: initial;
+            color: $LightGray;
+        }
+    }
+}
