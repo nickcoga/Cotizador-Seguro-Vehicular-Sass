@@ -1,11 +1,13 @@
 import classes from "./Button.module.scss";
 import ChevronRight from "../../assets/chevron_right.svg";
 
-export function Button({ children, onClick, showArrow }) {
+function Button({ children, onClick, showarrow }) {
   return (
-    <button onClick={onClick} showArrow={showArrow} className={classes.button}>
+    <button onClick={onClick} showarrow={showarrow} className={classes.button}>
       {children}
-      {showArrow ? <img src={ChevronRight} alt="ChevronRight.svg" /> : ""}
+      {showarrow ? <img src={ChevronRight} alt="ChevronRight.svg" /> : ""}
     </button>
   );
 }
+
+export default Button;
