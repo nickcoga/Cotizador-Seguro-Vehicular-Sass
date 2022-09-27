@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import BuildPlan from "./screens/build_plan/BuildPlan";
 import CarData from "./screens/car_data/CarData";
 import Home from "./screens/home/Home";
+import Thanks from "./screens/thanks/Thanks";
 
 function App() {
   const [user, setUser] = useState();
@@ -18,6 +20,7 @@ function App() {
           path="/"
           element={<Home setUser={setUser} plate={plate} setPlate={setPlate} />}
         />
+
         <Route
           path="/cardata/:id"
           element={
@@ -32,6 +35,21 @@ function App() {
             />
           }
         />
+
+        <Route
+          path="/buildplan"
+          element={
+            <BuildPlan
+              plate={plate}
+              year={year}
+              brand={brand}
+              enabledIndex={enabledIndex}
+              setEnabledIndex={setEnabledIndex}
+            />
+          }
+        />
+
+        <Route path="/thanks" element={<Thanks user={user} />} />
       </Routes>
     </Router>
   );
