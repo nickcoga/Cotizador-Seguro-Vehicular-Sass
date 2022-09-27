@@ -1,0 +1,47 @@
+@import "../../scss/abstracts/variables.scss";
+
+.contentProgress {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    &__progress {
+        border: none;
+        width: 176px;
+        height: 6px;
+    }
+    progress::-webkit-progress-value {
+        background: $Purple;
+        border-radius: 20px;
+    }
+
+    progress::-webkit-progress-bar {
+        background: $LightPurple;
+        border-radius: 20px;
+    }
+    &__circleReturn {
+        height: 24px;
+        width: 24px;
+        padding: 2px;
+        color: $White;
+        border: 1px solid $BorderGray;
+        border-radius: 80px;
+        display: inline-block;
+        text-align: center;
+      
+        img {
+          position: relative;
+          top: -3px;
+          left: -1px;
+        } 
+    }
+
+    &__stepText {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 16px;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+        color: $Gray;
+    }
+}
