@@ -1,0 +1,85 @@
+@import "../../scss/abstracts/variables.scss";
+
+.stepperDesktop {
+    display: none;
+    position: fixed;
+    @media (min-width: 768px) {
+        width: 30vw;
+        height: calc(100vh - 64px);
+        margin-top: 65px;
+        background-color: $LightPurple;
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        &__contentOption {
+            width: 15vw;
+            gap: 24px;
+            position: relative;
+            top: 10vh;
+            left: 9vw;
+            display: flex;
+            align-items: center;
+            &__number {
+                height: 24px;
+                width: 24px;
+                padding: 2px;
+                background-color: $Purple;
+                color: $White;
+                border: 1px solid $LightPurple;;
+                border-radius: 80px;
+                display: inline-block;
+                text-align: center;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 16px;
+                text-align: center;
+                letter-spacing: 0.6px;
+                text-transform: uppercase;
+            }
+            &__number2{
+                height: 24px;
+                width: 24px;
+                padding: 2px;
+                background-color: $LightPurple;
+                color: $StepColor;
+                border: 1px solid $StepColor;
+                border-radius: 80px;
+                display: inline-block;
+                text-align: center;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 16px;
+                text-align: center;
+                letter-spacing: 0.6px;
+                text-transform: uppercase;
+            }
+            &__option {
+                font-size: 16px;
+                line-height: 24px;
+                color: $StepColor;
+            }
+            &__dottep__line {
+                width: 4px;
+                position: absolute;
+                top: 15px;
+                left: 9px;
+            }
+        }  
+     
+      }
+   
+
+}
+
+.stepperMobile {
+    height: 48px;
+    border-bottom: 1px solid $BorderGray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (min-width: 768px) {
+      display: none;
+    }
+}
