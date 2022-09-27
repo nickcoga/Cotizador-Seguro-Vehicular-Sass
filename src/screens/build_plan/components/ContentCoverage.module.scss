@@ -1,0 +1,100 @@
+@import "../../../scss/abstracts/variables.scss";
+
+.container {
+    position: relative;
+    top: 3vh;
+    left: 0vw;
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+
+    &__content {
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__coverageOption {
+            width: 71vw;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            &__text{
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.2px;
+            color: $DarkGray;
+            }
+            &__img {
+                display: none;
+            }
+            &__contentToggle {
+                display: initial;
+            }
+        }
+        &__contentButton {
+            display: none;
+        }
+
+        &__seeMore {
+            display: initial;
+        }
+    }
+
+    &__paragraph {
+        width: 66vw;
+        font-family: $roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    @media (min-width: 768px) {
+        width: 20vw;
+
+        &__content {
+            width: 20vw;
+            &__coverageOption {
+                width: 20vw;
+                &__img {
+                    display: initial;
+                }
+                &__contentToggle {
+                    display: none;
+                }
+            }
+            &__contentButton {
+                width: 8vw;
+                gap: 4px;
+                display: initial;
+                display: flex;
+                align-items: center;
+                font-family: Lato;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 16px;
+                color: $Purple;
+                &__circle {
+                  height: 24px;
+                  width: 24px;
+                  padding: 2px;
+                  border: 1px solid $Purple;
+                  color: $Purple;
+                  border-radius: 80px;
+                  text-align: center;
+                }
+            }
+            &__seeMore {
+                display: none;
+            }
+        }
+        &__paragraph {
+            width: 15vw;
+        }
+    }
+}
