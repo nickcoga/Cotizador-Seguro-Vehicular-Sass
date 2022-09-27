@@ -3,7 +3,6 @@ import classes from "./InputText.module.scss";
 export default function InputText({
   label = "",
   caption = "",
-  error = false,
   placeholder = "",
   name = "",
   value = "",
@@ -13,7 +12,7 @@ export default function InputText({
   return (
     <div className={classes.fieldContainer}>
       {label && <label htmlFor="name">{label}</label>}
-      <div className={classes.fieldContainer__content} error={error}>
+      <div className={classes.fieldContainer__content}>
         <input
           className={classes.fieldContainer__styledInput}
           value={value}
@@ -24,8 +23,6 @@ export default function InputText({
           required={required}
         />
       </div>
-
-      {caption && <div error={error}> Caption test</div>}
     </div>
   );
 }

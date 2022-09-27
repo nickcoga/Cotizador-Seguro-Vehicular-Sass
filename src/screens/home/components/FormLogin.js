@@ -1,18 +1,18 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Button } from "../../../shared/button/Button";
 import InputText from "../../../shared/inputText/InputText";
 import InputTextSelect from "../../../shared/inputTextSelect/InputTextSelect";
 import classes from "./FormLogin.module.scss";
 import typeDocs from "../../../constants/TypeDocs.js";
 import UsersService from "../../../services/users_services";
+import Button from "../../../shared/button/Button";
 
 export default function FormLogin({ setUser, plate, setPlate }) {
   const [phone, setPhone] = useState("");
   const [nroDoc, setNroDoc] = useState("");
   const [typeDoc, setTypeDoc] = useState("Dni");
 
-  let history = useNavigate();
+  let navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -21,7 +21,8 @@ export default function FormLogin({ setUser, plate, setPlate }) {
     const [user] = await usersService.show(nroDoc, typeDoc);
     setUser(user);
     // TODO: handle error when user doesn't exist in db.json
-    history.push(`/cardata/${user.id}`);
+
+    navigate(`/cardata/${user.id}`);
   };
 
   return (

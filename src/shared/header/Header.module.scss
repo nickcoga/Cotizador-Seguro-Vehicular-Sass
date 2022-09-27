@@ -1,6 +1,7 @@
 @import "../../scss/abstracts/variables.scss";
 
 .header {
+    border-bottom: 1px solid $BorderGray;
     display: flex;
     align-items: center;
     height: 56px;
@@ -39,7 +40,7 @@
         margin: 1px;
     }
     &__contentText {
-        color: $purple;
+        color: $Purple;
         font-family: $roboto;
         font-style: normal;
         font-weight: normal;
@@ -50,7 +51,7 @@
         }
     }
     &__contentPhone {
-        color: $purple;
+        color: $Purple;
         font-family: $roboto;
         font-style: normal;
         font-weight: normal;
