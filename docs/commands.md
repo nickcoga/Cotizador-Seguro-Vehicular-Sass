@@ -7,3 +7,5 @@ npx create-react-app cotizador-seguro-vehicular-sass
 npm install sass
 
 npm i react-router-dom
+
+npm i gh-pages
