@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/Cotizador-Seguro-Vehicular-Sass/static/css/main.2959214e.css",
+    "main.js": "/Cotizador-Seguro-Vehicular-Sass/static/js/main.29dc1b8f.js",
+    "static/media/lady_car_desktop.svg": "/Cotizador-Seguro-Vehicular-Sass/static/media/lady_car_desktop.6c86a8e8fd3a542c0c6650a18595244f.svg",
+    "static/media/lady_car_mobile.svg": "/Cotizador-Seguro-Vehicular-Sass/static/media/lady_car_mobile.82e205366859c868b951d73e46751043.svg",
+    "static/media/person_background_desktop.svg": "/Cotizador-Seguro-Vehicular-Sass/static/media/person_background_desktop.7bc50a0c7e41e78b538fb3c4eb77f68c.svg",
+    "static/media/home_background.svg": "/Cotizador-Seguro-Vehicular-Sass/static/media/home_background.6d1f3a16f9d662de0731eb381c3ce795.svg",
+    "static/media/person_background_mobile.svg": "/Cotizador-Seguro-Vehicular-Sass/static/media/person_background_mobile.581511cd929aad064760f8514ed43cf1.svg",
+    "static/media/person_card.svg": "/Cotizador-Seguro-Vehicular-Sass/static/media/person_card.2071ac6ff66987c2a7d6895289eb2b8a.svg",
+    "static/media/flexible_vehicular.svg": "/Cotizador-Seguro-Vehicular-Sass/static/media/flexible_vehicular.57bf8e97bcbee229160a6c6e8fcc9e5b.svg",
+    "static/media/total_loss.svg": "/Cotizador-Seguro-Vehicular-Sass/static/media/total_loss.81009f0ad796c046f2588e1bfd162a3a.svg",
+    "static/media/shock.svg": "/Cotizador-Seguro-Vehicular-Sass/static/media/shock.efab2cca7b491ff6b790e7408b9a44e0.svg",
+    "static/media/car.svg": "/Cotizador-Seguro-Vehicular-Sass/static/media/car.e12126f89fdb6f8af86caf53910eb203.svg",
+    "static/media/stolen_tire.svg": "/Cotizador-Seguro-Vehicular-Sass/static/media/stolen_tire.b950ba28057d7bc160fd421d3e03e546.svg",
+    "static/media/rimac_logo.svg": "/Cotizador-Seguro-Vehicular-Sass/static/media/rimac_logo.95e747ebc4ceb80304da3f6c589cc555.svg",
+    "index.html": "/Cotizador-Seguro-Vehicular-Sass/index.html",
+    "static/media/ic_phone.svg": "/Cotizador-Seguro-Vehicular-Sass/static/media/ic_phone.f2f3fd027be06a2c8278121b55a5f1d4.svg",
+    "static/media/check.svg": "/Cotizador-Seguro-Vehicular-Sass/static/media/check.3198116e6f68facf43cf29759e0d14b5.svg",
+    "static/media/chevron_right.svg": "/Cotizador-Seguro-Vehicular-Sass/static/media/chevron_right.fe9ed838485426180bb64fc7016a0566.svg",
+    "static/media/chevron_down.svg": "/Cotizador-Seguro-Vehicular-Sass/static/media/chevron_down.c5b40f0547af1ae529106b68e79623cd.svg",
+    "static/media/chevron_up.svg": "/Cotizador-Seguro-Vehicular-Sass/static/media/chevron_up.e866ae9328b31603cee88cd5a67037ca.svg",
+    "static/media/chevron_left_orange.svg": "/Cotizador-Seguro-Vehicular-Sass/static/media/chevron_left_orange.521164bda82d574caec6723a4a11a224.svg",
+    "static/media/chevron_left.svg": "/Cotizador-Seguro-Vehicular-Sass/static/media/chevron_left.894008c78f58009f84af7e1588f63d62.svg",
+    "static/media/dottep_line.svg": "/Cotizador-Seguro-Vehicular-Sass/static/media/dottep_line.e27f3aab932f1d6eafc715d6ec016d65.svg",
+    "main.2959214e.css.map": "/Cotizador-Seguro-Vehicular-Sass/static/css/main.2959214e.css.map",
+    "main.29dc1b8f.js.map": "/Cotizador-Seguro-Vehicular-Sass/static/js/main.29dc1b8f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2959214e.css",
+    "static/js/main.29dc1b8f.js"
+  ]
+}
