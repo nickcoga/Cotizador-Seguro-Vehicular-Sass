@@ -5,7 +5,8 @@
     grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end: 3;  
-    padding: 0px 15px;  
+    padding: 10px 15px;  
+    width: 100vw;
     &__textName{
         font-style: normal;
         font-weight: normal;
@@ -32,10 +33,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 97vw;
+        width: 95vw;
         margin: 0px;
         gap: 16px;
-        padding: 5px 15px 5px 15px ;
+        padding: 5px 15px;
         &__text {
           font-size: 16px;
           line-height: 24px;
@@ -47,7 +48,7 @@
     }
 
     &__contentRadioButtons {
-      width: 97vw;
+      width: 100vw;
       display: flex;
       margin-top: 2vh;
       padding: 2vh 12vw;
@@ -95,13 +96,13 @@
     }
 
     &__contentSum {
-      width: 97vw;
+      width: 100vw;
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 15px;
       font-size: 16px;
       line-height: 24px;
-      padding: 20px 0px;
+      padding: 20px 10px;
       &__sum {
         display: flex;
         gap:25px;
@@ -156,13 +157,14 @@
     }
 
     @media (min-width: 768px) {
-      grid-column-start: 5;
-      grid-column-end: 5;
+      grid-column-start: 6;
+      grid-column-end: 6;
       grid-row-start: 3;
-      grid-row-end: 4;
+      grid-row-end: 3;
       width: 28vw;
       height: 80vh;
-      padding: 0px 96px;
+      padding: 0px 0px;
+
       &__content {
         width: 20vw;
         &__text{
@@ -181,6 +183,7 @@
 
       &__contentSum {
         width: 20vw;
+        gap: 20px;
         &__sum {
           width: 20vw;
           display: flex;
@@ -321,8 +324,8 @@
         }        
       }
     @media (min-width: 768px) {
-      grid-column-start: 6;
-      grid-column-end: 6;
+      grid-column-start: 7;
+      grid-column-end: 7;
       grid-row-start: 4;
       grid-row-end: 5;
       &__label {

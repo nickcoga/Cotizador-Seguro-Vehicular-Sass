@@ -42,17 +42,10 @@
     }
 
     @media (min-width: 768px) {
-        position: absolute;
-        width: 21vw;
-        height: 100vh;
-        top: 57vh;
-        left: 38vw;
+        width: 28vw;
         background-color: initial;
 
         &__contentTab {
-            position: absolute;
-            top: 12vh;
-            left: 0vw;
             width: initial;
 
             &__Tab {

@@ -1,10 +1,13 @@
 @import "../../../scss/abstracts/variables.scss";
 
 .container {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 19;
+    grid-row-end: 19;  
     width: 90vw;
     display: flex;
-    gap: 15vw;
-    top: 190vh;
+    gap: 19px;
     padding: 40px 0px;
     margin: auto;
     &__content {
@@ -48,29 +51,26 @@
     }
 
   
-
-
     @media (min-width: 768px) {
-        position: absolute;
+        grid-column-start: 7;
+        grid-column-end: 7;
+        grid-row-start: 4;
+        grid-row-end: 4;  
+        padding: 3vw 3vw;
         flex-direction: column;
-        width: 15vw;
-        top: 27vh;
-        left: 65vw;
-        padding: 0px 0px;
+      
+        width: 20vw;
 
         &__content {
             width: 15vw;
+            
             &__contentLogo {
-                // display: initial;
                 display: flex;
             }
         }
 
         &__line {
             display: initial;
-            position: absolute;
-            top: 6vh;
-            left: 0vw;
             width: 15vw;
             border: 1px solid $BorderGray;
         }
@@ -79,9 +79,6 @@
             width: 15vw;
             display: flex;
             flex-direction: column;
-            position: absolute;
-            top: 8vh;
-            left: 0vw;
             gap: 12px;
             padding-bottom: 10px;
             &__list {
