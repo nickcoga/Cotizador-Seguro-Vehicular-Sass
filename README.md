@@ -2,11 +2,13 @@
 
 Developer: Nick Correa Garcia
 
-The app is deployed [here]()
+The app is deployed [here](https://nickcoga.github.io/Cotizador-Seguro-Vehicular-Sass/)
 
-LightHouse Mobile: ![image]()
+Test User: "id": 3, "name":"Nico", "dni": 46454443 , "phone": 954685231 ,"passport": 123456789, "email": "nicoga@gmail.com"
 
-LightHouse Desktop: ![image]()
+LightHouse Mobile: ![image](https://user-images.githubusercontent.com/68827067/192897701-08a07539-0f2f-4c23-b3a4-007409cf56ec.png)
+
+LightHouse Desktop: ![image](https://user-images.githubusercontent.com/68827067/192897168-4479a98f-9b3b-4cb3-81f5-1d78cd1c13eb.png)
 
 ## Libraries/Tools used and why they were selected
 
@@ -48,7 +50,6 @@ Created db.json file to consume data (Fetch)
 users: [https://my-json-server.typicode.com/nickcoga/Cotizador-Seguro-Vehicular/users]
 cars: [https://my-json-server.typicode.com/nickcoga/Cotizador-Seguro-Vehicular/cars]
 
-Test User: "id": 3, "name":"Nico", "dni": 46454443 , "phone": 954685231 ,"passport": 123456789, "email": "nicoga@gmail.com"
 
 ### Media Queries
 
