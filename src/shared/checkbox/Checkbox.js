@@ -9,7 +9,7 @@ export default function Checkbox({ text }) {
         type="checkbox"
         value="value1"
       />
-      <label for="styled-checkbox-1">{text}</label>
+      <label htmlFor="styled-checkbox-1">{text}</label>
     </div>
   );
 }

@@ -42,10 +42,7 @@ export default function Stepper({ enabledIndex, setEnabledIndex }) {
                   alt="Dottep Line"
                 />
               )}
-              <div
-                className={classes.stepperDesktop__contentOption__option}
-                enabled={enabledIndex === index + 1}
-              >
+              <div className={classes.stepperDesktop__contentOption__option}>
                 {title}
               </div>
             </div>

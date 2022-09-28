@@ -3,7 +3,6 @@ import classes from "./Select.module.scss";
 export default function Select({
   label = "",
   icon,
-  error = false,
   showDefaultOption = false,
   placeholder = "",
   name = "",
@@ -12,7 +11,7 @@ export default function Select({
   onChange,
 }) {
   return (
-    <div className={classes.container} error={error}>
+    <div className={classes.container}>
       {label && (
         <label className={classes.container__inputLabel} htmlFor={name}>
           {label}
