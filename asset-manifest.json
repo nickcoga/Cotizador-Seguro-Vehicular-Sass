@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Cotizador-Seguro-Vehicular-Sass/static/css/main.2959214e.css",
-    "main.js": "/Cotizador-Seguro-Vehicular-Sass/static/js/main.29dc1b8f.js",
+    "main.js": "/Cotizador-Seguro-Vehicular-Sass/static/js/main.c18ab165.js",
     "static/media/lady_car_desktop.svg": "/Cotizador-Seguro-Vehicular-Sass/static/media/lady_car_desktop.6c86a8e8fd3a542c0c6650a18595244f.svg",
     "static/media/lady_car_mobile.svg": "/Cotizador-Seguro-Vehicular-Sass/static/media/lady_car_mobile.82e205366859c868b951d73e46751043.svg",
     "static/media/person_background_desktop.svg": "/Cotizador-Seguro-Vehicular-Sass/static/media/person_background_desktop.7bc50a0c7e41e78b538fb3c4eb77f68c.svg",
@@ -24,10 +24,10 @@
     "static/media/chevron_left.svg": "/Cotizador-Seguro-Vehicular-Sass/static/media/chevron_left.894008c78f58009f84af7e1588f63d62.svg",
     "static/media/dottep_line.svg": "/Cotizador-Seguro-Vehicular-Sass/static/media/dottep_line.e27f3aab932f1d6eafc715d6ec016d65.svg",
     "main.2959214e.css.map": "/Cotizador-Seguro-Vehicular-Sass/static/css/main.2959214e.css.map",
-    "main.29dc1b8f.js.map": "/Cotizador-Seguro-Vehicular-Sass/static/js/main.29dc1b8f.js.map"
+    "main.c18ab165.js.map": "/Cotizador-Seguro-Vehicular-Sass/static/js/main.c18ab165.js.map"
   },
   "entrypoints": [
     "static/css/main.2959214e.css",
-    "static/js/main.29dc1b8f.js"
+    "static/js/main.c18ab165.js"
   ]
 }
