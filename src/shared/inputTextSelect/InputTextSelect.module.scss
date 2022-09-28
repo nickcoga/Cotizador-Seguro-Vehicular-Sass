@@ -47,6 +47,14 @@
             &::placeholder {
                 color: $LightGray;
             }
+
+
+            &[type=number]::-webkit-inner-spin-button, 
+            &[type=number]::-webkit-outer-spin-button { 
+            -webkit-appearance: none; 
+            margin: 0; 
+            }
+
             @media (min-width: 768px) {
                 border: none;
             }
