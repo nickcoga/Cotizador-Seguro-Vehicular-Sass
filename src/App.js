@@ -18,7 +18,14 @@ function App() {
         <Route
           exact
           path="/"
-          element={<Home setUser={setUser} plate={plate} setPlate={setPlate} />}
+          element={
+            <Home
+              user={user}
+              setUser={setUser}
+              plate={plate}
+              setPlate={setPlate}
+            />
+          }
         />
 
         <Route

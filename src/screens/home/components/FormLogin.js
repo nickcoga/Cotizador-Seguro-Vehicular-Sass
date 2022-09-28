@@ -8,7 +8,7 @@ import UsersService from "../../../services/users_services";
 import Button from "../../../shared/button/Button";
 import Checkbox from "../../../shared/checkbox/Checkbox";
 
-export default function FormLogin({ setUser, plate, setPlate }) {
+export default function FormLogin({ user, setUser, plate, setPlate }) {
   const [phone, setPhone] = useState("");
   const [nroDoc, setNroDoc] = useState("");
   const [typeDoc, setTypeDoc] = useState("Dni");
@@ -18,12 +18,16 @@ export default function FormLogin({ setUser, plate, setPlate }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const usersService = new UsersService();
-    const [user] = await usersService.show(nroDoc, typeDoc);
-    setUser(user);
     // TODO: handle error when user doesn't exist in db.json
-
     navigate(`/cardata/${user.id}`);
+  };
+
+  const handleNewNroDoc = async (e) => {
+    const newNroDoc = e.target.value;
+    setNroDoc(newNroDoc);
+    const usersService = new UsersService();
+    const [userData] = await usersService.show(newNroDoc, typeDoc);
+    setUser(userData);
   };
 
   return (
@@ -36,14 +40,14 @@ export default function FormLogin({ setUser, plate, setPlate }) {
           placeholderInput="Nro. de Doc"
           valueInput={nroDoc}
           valueSelect={typeDoc}
-          onChangeInput={(e) => setNroDoc(e.target.value)}
+          onChangeInput={handleNewNroDoc}
           onChangeSelect={(e) => setTypeDoc(e.target.value)}
         />
         <InputText
           required
           label=""
           placeholder="Celular"
-          value={phone}
+          value={nroDoc && user ? user.phone : phone}
           onChange={(e) => setPhone(e.target.value)}
         />
         <InputText
