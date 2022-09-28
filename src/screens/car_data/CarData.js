@@ -1,8 +1,9 @@
-import React, { Fragment } from "react";
+import React from "react";
 import ButtonReturn from "../../shared/buttonReturn/ButtonReturn";
 import Header from "../../shared/header/Header";
 import Stepper from "../../shared/stepper/Stepper";
 import FormCarData from "./components/FormCarData";
+import classes from "./CardData.module.scss";
 
 export default function CarData({
   user,
@@ -14,7 +15,7 @@ export default function CarData({
   setEnabledIndex,
 }) {
   return (
-    <Fragment>
+    <div className={classes.cardData}>
       <Header />
       <Stepper enabledIndex={enabledIndex} setEnabledIndex={setEnabledIndex} />
       <ButtonReturn
@@ -29,6 +30,6 @@ export default function CarData({
         setBrand={setBrand}
         setEnabledIndex={setEnabledIndex}
       />
-    </Fragment>
+    </div>
   );
 }

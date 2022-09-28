@@ -1,0 +1,12 @@
+@import "../../scss/abstracts/variables.scss";
+
+.cardData {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(15, 15vw);
+    
+    @media (min-width: 768px) {
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(10, 5vw);
+    }
+}
