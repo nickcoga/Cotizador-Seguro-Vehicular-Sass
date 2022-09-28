@@ -13,7 +13,7 @@ function App() {
   const [enabledIndex, setEnabledIndex] = useState(1);
 
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route
           exact
