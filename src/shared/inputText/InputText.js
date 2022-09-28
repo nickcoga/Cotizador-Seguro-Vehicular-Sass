@@ -2,7 +2,7 @@ import classes from "./InputText.module.scss";
 
 export default function InputText({
   label = "",
-  caption = "",
+  type = "",
   placeholder = "",
   name = "",
   value = "",
@@ -15,6 +15,7 @@ export default function InputText({
       <div className={classes.fieldContainer__content}>
         <input
           className={classes.fieldContainer__styledInput}
+          type={type}
           value={value}
           name={name}
           placeholder={placeholder}

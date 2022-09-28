@@ -36,6 +36,7 @@ export default function FormLogin({ user, setUser, plate, setPlate }) {
       <div className={classes.form__contentInputs}>
         <InputTextSelect
           required
+          type={"number"}
           options={typeDocs}
           placeholderInput="Nro. de Doc"
           valueInput={nroDoc}
@@ -45,6 +46,7 @@ export default function FormLogin({ user, setUser, plate, setPlate }) {
         />
         <InputText
           required
+          type="number"
           label=""
           placeholder="Celular"
           value={nroDoc && user ? user.phone : phone}
@@ -54,7 +56,7 @@ export default function FormLogin({ user, setUser, plate, setPlate }) {
           required
           label=""
           placeholder="Placa"
-          value={plate}
+          value={plate ? plate.toUpperCase() : plate}
           onChange={(e) => setPlate(e.target.value)}
         />
       </div>

@@ -12,6 +12,7 @@ export default function InputTextSelect({
   options = [],
   onChangeInput,
   onChangeSelect,
+  type,
 }) {
   return (
     <div className={classes.container}>
@@ -39,6 +40,7 @@ export default function InputTextSelect({
       <div className={classes.container__contentInputText}>
         <input
           className={classes.container__contentInputText__styledInputText}
+          type={type}
           value={valueInput}
           name={nameInput}
           onChange={onChangeInput}
