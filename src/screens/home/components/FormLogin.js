@@ -6,6 +6,7 @@ import classes from "./FormLogin.module.scss";
 import typeDocs from "../../../constants/TypeDocs.js";
 import UsersService from "../../../services/users_services";
 import Button from "../../../shared/button/Button";
+import Checkbox from "../../../shared/checkbox/Checkbox";
 
 export default function FormLogin({ setUser, plate, setPlate }) {
   const [phone, setPhone] = useState("");
@@ -54,25 +55,23 @@ export default function FormLogin({ setUser, plate, setPlate }) {
         />
       </div>
       <label className={classes.form__label}>
-        <input
-          className={classes.form__label__input}
-          type={"checkbox"}
-          value=""
-        />
-        Acepto la{" "}
-        <a
-          className={classes.form__link}
-          href="https://www.rimac.com.pe/uploads/Ley29733_proteccion_de_datos_personales.pdf"
-        >
-          Política de Protección de Datos Personales{" "}
-        </a>
-        y los{" "}
-        <a
-          className={classes.form__link}
-          href="https://rimac.com/content/dam/rimac/publica/rimac/footer/TERMINOS-Y-CONDICIONES.pdf"
-        >
-          Terminos y Condiciones.
-        </a>
+        <Checkbox />
+        <div>
+          Acepto la{" "}
+          <a
+            className={classes.form__link}
+            href="https://www.rimac.com.pe/uploads/Ley29733_proteccion_de_datos_personales.pdf"
+          >
+            Política de Protección de Datos Personales{" "}
+          </a>
+          y los{" "}
+          <a
+            className={classes.form__link}
+            href="https://www.rimac.com/terminos-y-condiciones"
+          >
+            Terminos y Condiciones.
+          </a>
+        </div>
       </label>
 
       <div className={classes.form__containerButton}>
