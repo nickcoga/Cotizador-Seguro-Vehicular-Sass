@@ -1,16 +1,18 @@
 @import "../../../scss/abstracts/variables.scss";
 
 .formCarData {
-    position: absolute;
-    top: 17vh;
-    left: 10vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;  
+    padding: 0px 15px;  
     &__textName{
         font-style: normal;
         font-weight: normal;
         font-size: 28px;
         line-height: 36px;
         letter-spacing: -0.6px;
-        padding: 8px 0px;
+        padding: 10px 0px;
     }
 
     &__nameRed {
@@ -23,34 +25,32 @@
         font-weight: normal;
         font-size: 16px;
         line-height: 28px;
-        padding-bottom: 36px; 
+        padding: 5px 0px 32px 0px; 
     }
 
     &__content{
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 80vw;
+        width: 97vw;
+        margin: 0px;
         gap: 16px;
+        padding: 5px 15px 5px 15px ;
         &__text {
-          position: absolute;
-          top: 58vh;
-          left: 5vw;
-          font-style: normal;
-          font-weight: normal;
           font-size: 16px;
           line-height: 24px;
           text-align: center;
           letter-spacing: 0.2px;
+          padding: 10vh 0vw 0vh 0vw;
+          margin-right: 40vw;
         }
     }
 
     &__contentRadioButtons {
-      position: absolute;
-
-      top: 64vh;
-      left: 0vw;
+      width: 97vw;
       display: flex;
+      margin-top: 2vh;
+      padding: 2vh 12vw;
     
       input[type="radio"] + label {
         display: inline-block;
@@ -95,19 +95,17 @@
     }
 
     &__contentSum {
-      position: absolute;
-      top: 72vh;
-      left: 0vw;
+      width: 97vw;
       display: flex;
       flex-direction: column;
-      font-family: Lato;
-      font-style: normal;
-      font-weight: normal;
+      gap: 10px;
       font-size: 16px;
       line-height: 24px;
+      padding: 20px 0px;
       &__sum {
         display: flex;
-        gap: 5px;
+        gap:25px;
+        flex-wrap: wrap;
         font-size: 12px;
         font-style: normal;
         font-weight: normal;
@@ -115,95 +113,107 @@
         padding: 4px 0px 16px 0px;
         color: $RegularGray;
       }
-      &__inputNumber {
+
+      &__contentInputNumber {
         width: 80vw;
+        height: 56px;
         display: flex;
         align-items: center;
         justify-content: space-around;
-        border: 1px solid black;
-        border-radius: 4px;
-        gap: 10px;
-
-        &__input {
-          border: none;
-          width: 40vw;
-          height: 5vh;
-          text-align: center;
-          font-style: normal;
-          font-weight: normal;
-          font-size: 16px;
-          line-height: 24px;
-        }
-        &__span {
+        border: 1px solid $StepColor;
+        border-radius: 8px;
+        font-size: 16px;
+        line-height: 24px;
+        span {
           color: $Purple;
         }
-        div {
+
+        &__contentInput {
           display: flex;
           align-items: center;
+          &__inputNumber {
+            display: none;  
+            width: 40vw;
+            height: 2vh;
+          
+            div {
+              display: flex;
+              align-items: center;
+            }
+            input {
+              display: none;
+            }
+          }
+      
         }
-        input {
-          display: none;
-        }
-        height: 56px;
-      }
+      }            
+    }
 
-      &__conteinerButton{
-        display: flex;
-        width: 80vw;
-        justify-content: center;
-        padding-top: 40px;
-        padding-bottom: 56px;
-      }
-            
+    &__conteinerButton{
+      display: flex;
+      width: 80vw;
+      justify-content: center;
     }
 
     @media (min-width: 768px) {
+      grid-column-start: 5;
+      grid-column-end: 5;
+      grid-row-start: 3;
+      grid-row-end: 4;
       width: 28vw;
-      height: 100vh;
-      top: 14vh;
-      left: 37vw;
+      height: 80vh;
+      padding: 0px 96px;
       &__content {
         width: 20vw;
         &__text{
           width: 10vw;
-          top: 28vh;
-          left: 0vw;
+          padding: 0vh 0vw 0vh 0vw;
+          margin-right: 0vw;
         }
       }
+
       &__contentRadioButtons {
-        top: 28.5vh;
-        left: 12vw;
+        width: 20vw;
+        margin-top: 2vh;
         gap: 36px;
+        padding: 2vh 2vw;
       }
+
       &__contentSum {
-        width: 28vw;
-        top: 40vh;
-        left: 0vw;
+        width: 20vw;
         &__sum {
-          width: 12vw;
-          padding: 2px;
+          width: 20vw;
+          display: flex;
+          align-items: center;
           gap: 10px;
-          padding: 4px 0px 46px 0px;
+          padding: 4px 0px 4px 0px;
           font-size: 12px;
         }
-        &__inputNumber {
-          width: 8vw;
-          position: absolute;
-          top: 1vh;
-          left: 12vw;
-          &__input {
-            width: 5vw;
-          }
-        }
-        &__conteinerButton{
-          align-items: flex-start;
+
+        &__contentInputNumber {
           width: 10vw;
-          padding-top: 0px;
-          padding-bottom: 0px;
+          &__contentInput {
+            gap:2px;
+            width: 3vw;  
+            height: 3vh;
+            &__inputNumber {
+              display: none;        
+              input {
+                width: 5vw;
+              }
+            }
+          }
+        
         }
+      } 
+
+      &__conteinerButton{
+        align-items: flex-start;
+        width: 10vw;
+
       }
- 
     }
+
 }
 
 .line {
@@ -222,12 +232,13 @@
 
  .copyRight {
     width: 100vw;
-    position: absolute;
-    top: 125vh;
-    left: 0vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 30;
+    grid-row-end: 30;   
     padding: 30px 0px 30px 32px;
     display: flex;
-    font-family: Roboto;
+    font-family: $roboto;
     font-style: normal;
     font-weight: 300;
     font-size: 12px;
@@ -242,13 +253,15 @@
  }
 
  .contentRight {
-    position: absolute;
-    top: 58vh;
-    left: 10vw;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 7;
+    grid-row-end: 7;
     display: flex;
     flex-direction: column;
     gap: 16px;
     align-items: flex-start;
+    padding: 10px 40px;
 
     &__label {
         display: none;
@@ -266,7 +279,7 @@
 
     &__helpButton {
         border: none;
-        width: 79vw;
+        width: 80vw;
         display: flex;
         align-items: center;
         gap: 19px;
@@ -288,17 +301,18 @@
         }
       
 
-        @media (min-width: 768px) {
+        @media (min-width: 768px) { 
           border-top: 1px solid $LightPurple;
           border-radius: initial;
-          flex-direction: row-reverse;
-          width: 10vw;
-          height: 8vh;
           background-color: initial;
-          padding: 0px;
+          flex-direction: row-reverse;
+          width: 10vw;         
+          padding: 0px 0px;
+
 
           &__textHelpButton {
             text-align: left;
+            
           }
           
           &__textHelpButtonColor {
@@ -307,8 +321,10 @@
         }        
       }
     @media (min-width: 768px) {
-      top: 26vh;
-      left: 60vw;
+      grid-column-start: 6;
+      grid-column-end: 6;
+      grid-row-start: 4;
+      grid-row-end: 5;
       &__label {
         display: none;
         text-transform: uppercase;

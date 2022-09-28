@@ -88,33 +88,39 @@ export default function FormCarData({
 
         <div className={classes.formCarData__contentSum}>
           <label>Indica la suma asegurada</label>
+
           <div className={classes.formCarData__contentSum__sum}>
-            <label>MIN $12.500</label>
-            <label>|</label>
-            <label>MAX $16.500</label>
-          </div>
-          <div className={classes.formCarData__contentSum__inputNumber}>
-            <span
-              className={classes.formCarData__contentSum__inputNumber__span}
-              onClick={handleDecrement}
-            >
-              {" "}
-              —{" "}
-            </span>
             <div>
-              <div>$ </div>
-              <input
-                className={classes.formCarData__contentSum__inputNumber__input}
-                type="number"
-                value={sum}
-                readOnly
-              />
-              <div>{helpers.largeNumberFormatter(sum)}</div>
+              <label>MIN $12.500</label>
+              <label>|</label>
+              <label>MAX $16.500</label>
             </div>
-            <span onClick={handleIncrement}> + </span>
+
+            <div
+              className={classes.formCarData__contentSum__contentInputNumber}
+            >
+              <span onClick={handleDecrement}>—</span>
+              <div
+                className={
+                  classes.formCarData__contentSum__contentInputNumber__contentInput
+                }
+              >
+                <div>$</div>
+                <input
+                  className={
+                    classes.formCarData__contentSum__contentInputNumber__contentInput__inputNumber
+                  }
+                  type="number"
+                  value={sum}
+                  readOnly
+                />
+                <div>{helpers.largeNumberFormatter(sum)}</div>
+              </div>
+              <span onClick={handleIncrement}> + </span>
+            </div>
           </div>
-          <div className={classes.formCarData__contentSum__conteinerButton}>
-            <Button showarrow type="submit" form="form-cardata">
+          <div className={classes.formCarData__conteinerButton}>
+            <Button type="submit" form="form-cardata">
               CONTINUAR
             </Button>
           </div>
