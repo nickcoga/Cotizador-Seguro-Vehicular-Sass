@@ -74,6 +74,10 @@
 }
 
 .stepperMobile {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;  
     height: 48px;
     border-bottom: 1px solid $BorderGray;
     display: flex;
